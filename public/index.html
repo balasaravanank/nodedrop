@@ -9,29 +9,20 @@
 <body>
 
   <div id="username-screen">
-    <h2>NodeDrop 💬</h2>
+    <h2>NodeDrop </h2>
     <p>Enter a username to join the chat</p>
     <input id="username-input" type="text" placeholder="your name..." maxlength="20" />
     <button onclick="joinChat()">Join Chat</button>
   </div>
 
   <div id="chat-screen">
-
-    <div id="sidebar">
-      <div id="sidebar-header">Online <span id="user-count">0</span></div>
-      <ul id="user-list"></ul>
+    <div id="header">NodeDrop </div>
+    <div id="messages"></div>
+    <div id="typing"></div>
+    <div id="bottom">
+      <input id="message-input" type="text" placeholder="type a message..." />
+      <button onclick="sendMessage()">Send</button>
     </div>
-
-    <div id="main">
-      <div id="header">NodeDrop 💬</div>
-      <div id="messages"></div>
-      <div id="typing"></div>
-      <div id="bottom">
-        <input id="message-input" type="text" placeholder="type a message..." />
-        <button onclick="sendMessage()">Send</button>
-      </div>
-    </div>
-
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
